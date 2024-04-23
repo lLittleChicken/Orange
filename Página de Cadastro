@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="cabeça de boi.png">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&display=swap" rel="stylesheet">
+    <title>Tela de início</title>
+</head>
+<body class="body2">
+    <div class="B-container chakra-petch-regular">
+        <div id="Background-PC"></div>
+            <div class="container-PC">
+                <div class="l-container">
+                  <h1 id="h11">Fazer Cadastro</h1>
+                  <h4 id="h51">Vá Para Tela de Login <br> Aperte para ir à tela de de login</h4>                  
+                    <a href="Página Inicial.html"><button class="btncriarconta">Tela de Login</button></a>
+
+
+            </div>
+            <div class="d-container">
+                <div id="d-inside">
+                    <form action="/verificar_senha" method="post">
+                        <label id="eou" for="email"></label>
+                            <input class="forms" type="email" id="email" placeholder="Email ou nome de usuário" name="email" required>
+                        <br>
+                        <label id="confirm_email" for="confirm_email"></label>
+                            <input class="forms" type="email" id="confirm_email" placeholder="Confirme seu email" name="confirm_email" required>
+                        <br>
+                        <label id="senha" for="password"></label>
+                            <input class="forms" type="password" name="senha" placeholder="Senha" required>
+                        <br>
+                        <label for="confirm_password"></label>
+                            <input class="forms" type="password" id="confirm_password" placeholder="Confirme sua senha" name="confirm_password" required>
+                        <button class="btnsubmit" type="submit">Acessar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Guerr Names</h1>
+    <ul>
+        {% for guerr_name in guerr_names %}
+            <li>{{ guerr_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
